@@ -12,6 +12,7 @@ html{box-sizing: border-box;}
 --banner-color:#2F303A;
 --team-background-color:#F5F4FA;
 --image-content-border-color:#EEEEEE;
+--gradient-color:rgba(47, 48, 58, 0.4);
 }
 
 .body-studio, .body-portfolio, .body-contacts{
@@ -57,7 +58,6 @@ h1, h2, h3, p{
 /*header*/
 .page-head{
 background-color: var(--body-color);
-box-sizing: border-box;
 border-bottom: 1px solid var(--border-bottom);
 
 }
@@ -97,7 +97,7 @@ letter-spacing: 0.03em;
 
 .logo .web {color:var(--effects-color);}
 
-.list{list-style: none;}
+.list, .speciality-list{list-style: none;}
 
 .head.list,.head-contacts.list{
     display: flex;
@@ -106,6 +106,7 @@ letter-spacing: 0.03em;
 }
 .head-contacts.list{
     margin-left: auto;
+
 }
 
 .head.list{
@@ -139,6 +140,25 @@ letter-spacing: 0.03em;
     color: var(--effects-color); 
 }
 
+.head-item .link-contacts::before{
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.icon-mail::before{
+    width: 16px;
+    height: 12px;
+    background-image: url(../images/mail.svg);
+}
+.icon-phone::before{
+    width: 10px;
+    height: 16px;
+    background-image: url(../images/phone.svg);
+}
+
 .head-item:not(:last-child){
 margin-right: 50px;
 }
@@ -147,6 +167,21 @@ margin-right: 50px;
 /*Section banner*/
 .banner{
     background-color:var(--banner-color) ;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4) 
+        ),
+    url(../images/headder-banner.jpg) ;
+    
+    max-width: 1600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -191,16 +226,45 @@ margin-bottom: 30px;
 .speciality{
  padding-top: 94px;
 }
-.speciality.list{
+.speciality-list{
     display: flex;
     margin: 0;
+    padding: 0;
 }
 .speciality-item{
-    max-width: 270px;
+    width: 270px;
 }
 .speciality-item:not(:first-child){
     margin-left: 30px;
 }
+
+.speciality-item .list-title::before{
+    content: "";
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--team-background-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+}
+
+.icon-antenna::before{
+    background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before{
+    background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before{
+    background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before{
+    background-image: url(../images/astronaut.svg);
+}
+
 
 .speciality-item .list-title{
 
