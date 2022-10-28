@@ -144,8 +144,16 @@ letter-spacing: 0.03em;
     content: "";
     display: inline-block;
     margin-right: 10px;
-    background-position:center;
+    background-position: 0% 0%;
     background-repeat: no-repeat;
+    
+}
+
+.head-contacts .head-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
 }
 
 .icon-mail::before{
