@@ -15,10 +15,6 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.icon-group3 {
-  width: 2.0234375em;
-}
-
 .icon-group {
   width: 0.8720703125em;
 }
@@ -29,6 +25,10 @@ Single-colored icons can be modified like so:
 
 .icon-group2 {
   width: 1.0712890625em;
+}
+
+.icon-group3 {
+  width: 2.0234375em;
 }
 
 .icon-group4 {

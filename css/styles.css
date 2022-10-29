@@ -13,7 +13,7 @@ html{box-sizing: border-box;}
 --team-background-color:#F5F4FA;
 --image-content-border-color:#EEEEEE;
 --gradient-color:rgba(47, 48, 58, 0.4);
---color-icon:#AFB1B8;
+--icon-color:#AFB1B8;
 }
 
 .body-studio, .body-portfolio, .body-contacts{
@@ -24,7 +24,7 @@ color: var(--primary-color);
 margin: 0 auto;
 }
 
-img{display: block;}
+img, svg{display: block;}
 
 h1, h2, h3, p{
     margin: 0;
@@ -232,33 +232,11 @@ margin-bottom: 30px;
     margin-left: 30px;
 }
 
-.speciality-item .list-title::before{
-    content: "";
-    display: block;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: var(--team-background-color);
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 2px;
+.icon-special{background-color: var(--team-background-color);
+padding: 25px 100px;
+border-radius: 2px;
+margin-bottom: 30px;
 }
-
-.icon-antenna::before{
-    background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before{
-    background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before{
-    background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before{
-    background-image: url(../images/astronaut.svg);
-}
-
 
 .speciality-item .list-title{
 
@@ -358,30 +336,30 @@ letter-spacing: 0.03em;
 margin-top: 10px;
 }
 
-.icon-team-box{
+.icons-team-box{
     display: flex;
     padding:0px 32px 30px 32px;
 }
 
-.icon-team:not(:last-child){
+.icons-team:not(:last-child){
     margin-right: 10px;
 }
 
-.icon-team.inst{
-    background-color: var(--body-color);
-    fill: var(--color-icon);
-    display: flex;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    
+.icons-team{
+    padding: 11px;
+    border-radius: 50%; 
+    color:var(--icon-color) ;
 }
-.icon-team.inst:hover{
+
+.icons-team:hover{
     background-color: var(--effects-color);
-    fill: var(--body-color);
+    color:var(--body-color);
+    cursor: pointer;
 }
+.icon{
+    fill:currentColor
+}
+
 
 
 
