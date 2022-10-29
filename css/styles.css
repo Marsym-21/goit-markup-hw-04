@@ -13,6 +13,7 @@ html{box-sizing: border-box;}
 --team-background-color:#F5F4FA;
 --image-content-border-color:#EEEEEE;
 --gradient-color:rgba(47, 48, 58, 0.4);
+--color-icon:#AFB1B8;
 }
 
 .body-studio, .body-portfolio, .body-contacts{
@@ -144,19 +145,18 @@ letter-spacing: 0.03em;
 margin-right: 50px;
 }
 
-.head-item{
+.head-contacts.list .link-contacts{
     display: flex;
     align-items: center;
-
 }
 
-.icon-mail{
+.icon-svg{
+   
    margin-right: 10px;
+   fill:currentColor;
 }
 
-.head-contacts.list .icon-mail:hover, .head-contacts.list .icon-mail:focus{
-    fill:var(--effects-color); 
-}
+
 
 /*Section banner*/
 .banner{
@@ -307,7 +307,6 @@ margin-bottom: 50px;
     margin-right: 30px;
 }
 
-
 /*Section team*/
 
 .team{
@@ -338,7 +337,7 @@ margin-bottom: 50px;
 
 .team-content{
 padding-top: 30px;
-padding-bottom: 30px;
+padding-bottom: 16px;
 }
 
 .team-item .title{
@@ -351,15 +350,42 @@ letter-spacing: 0.03em;
 margin: 0px;
 }
 
-
 .team-item .text {
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
 margin-top: 10px;
-margin-bottom: 0px;
+}
 
+.icon-team-box{
+    display: flex;
+    padding:0px 32px 30px 32px;
+}
+
+.icon-team:not(:last-child){
+    margin-right: 10px;
+}
+
+.circle{
+    background-color: var(--body-color);
+     color: var(--color-icon);
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    padding: auto;
+}
+.circle:hover{
+    background-color: var(--effects-color);
+    color: var(--body-color);
+}
+.icon-team{
+    background-color:currentColor;
+    fill: currentColor;
 }
 
 
