@@ -140,35 +140,23 @@ letter-spacing: 0.03em;
     color: var(--effects-color); 
 }
 
-.head-item .link-contacts::before{
-    content: "";
-    display: inline-block;
-    margin-right: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-.head-item .link-contacts::before, .link-text-info{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.icon-mail::before{
-    width: 16px;
-    height: 12px;
-    background-image: url(../images/mail.svg);
-}
-.icon-phone::before{
-    width: 10px;
-    height: 16px;
-    background-image: url(../images/phone.svg);
-}
-
 .head-item:not(:last-child){
 margin-right: 50px;
 }
 
+.head-item{
+    display: flex;
+    align-items: center;
+
+}
+
+.icon-mail{
+   margin-right: 10px;
+}
+
+.head-contacts.list .icon-mail:hover, .head-contacts.list .icon-mail:focus{
+    fill:var(--effects-color); 
+}
 
 /*Section banner*/
 .banner{
