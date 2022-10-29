@@ -367,25 +367,20 @@ margin-top: 10px;
     margin-right: 10px;
 }
 
-.circle{
+.icon-team.inst{
     background-color: var(--body-color);
-     color: var(--color-icon);
+    fill: var(--color-icon);
     display: flex;
     width: 44px;
     height: 44px;
     align-items: center;
     justify-content: center;
     border: none;
-    border-radius: 50%;
-    padding: auto;
+    
 }
-.circle:hover{
+.icon-team.inst:hover{
     background-color: var(--effects-color);
-    color: var(--body-color);
-}
-.icon-team{
-    background-color:currentColor;
-    fill: currentColor;
+    fill: var(--body-color);
 }
 
 
